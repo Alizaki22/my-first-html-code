@@ -1,0 +1,174 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack - Your Personal Finance App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">FinTrack</div>
+            <div class="nav-menu">
+                <div class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Accounts</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transactions</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Investments</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-piggy-bank"></i>
+                    <span>Savings</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Cards</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="page-title">Dashboard</div>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                    <span>Sarah Johnson</span>
+                </div>
+            </div>
+            
+            <!-- Dashboard Cards -->
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Total Balance</div>
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <div class="card-value">$12,458.50</div>
+                    <div class="card-growth growth-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>2.4% from last month</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Monthly Income</div>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="card-value">$4,250.00</div>
+                    <div class="card-growth growth-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>5.1% from last month</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Monthly Expenses</div>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="card-value">$2,150.75</div>
+                    <div class="card-growth growth-down">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>1.8% from last month</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Transactions -->
+            <div class="transactions">
+                <div class="section-header">
+                    <div class="section-title">Recent Transactions</div>
+                    <button class="btn btn-primary">View All</button>
+                </div>
+                
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Amazon Purchase</h4>
+                                <p>Jun 15, 2023 • Shopping</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount expense">-$129.99</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Salary Deposit</h4>
+                                <p>Jun 10, 2023 • Income</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount income">+$4,250.00</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Dinner at Bistro</h4>
+                                <p>Jun 8, 2023 • Food & Dining</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount expense">-$78.50</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon">
+                                <i class="fas fa-subway"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Public Transport</h4>
+                                <p>Jun 5, 2023 • Transportation</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount expense">-$32.75</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Netflix Subscription</h4>
+                                <p>Jun 1, 2023 • Entertainment</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount expense">-$14.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
